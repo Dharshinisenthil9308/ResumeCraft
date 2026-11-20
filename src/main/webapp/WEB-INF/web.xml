@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>ResumeCraft - Smart Resume Builder</display-name>
+    <description>A smart resume builder web application for college students</description>
+
+    <!-- Welcome File -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- ==================== AUTH SERVLETS ==================== -->
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- ==================== DASHBOARD SERVLET ==================== -->
+
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- ==================== PROFILE SERVLETS ==================== -->
+
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/profile</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EducationServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.EducationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EducationServlet</servlet-name>
+        <url-pattern>/education</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ExperienceServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.ExperienceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExperienceServlet</servlet-name>
+        <url-pattern>/experience</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SkillServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.SkillServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SkillServlet</servlet-name>
+        <url-pattern>/skills</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProjectServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.ProjectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProjectServlet</servlet-name>
+        <url-pattern>/projects</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CertificationServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.CertificationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CertificationServlet</servlet-name>
+        <url-pattern>/certifications</url-pattern>
+    </servlet-mapping>
+
+    <!-- ==================== RESUME SERVLETS ==================== -->
+
+    <servlet>
+        <servlet-name>ResumeBuilderServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.ResumeBuilderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResumeBuilderServlet</servlet-name>
+        <url-pattern>/resume/build</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResumePreviewServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.ResumePreviewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResumePreviewServlet</servlet-name>
+        <url-pattern>/resume/preview</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResumeDownloadServlet</servlet-name>
+        <servlet-class>com.resumecraft.servlet.ResumeDownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResumeDownloadServlet</servlet-name>
+        <url-pattern>/resume/download</url-pattern>
+    </servlet-mapping>
+
+    <!-- ==================== SESSION CONFIG ==================== -->
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!-- ==================== ERROR PAGES ==================== -->
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/jsp/common/404.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/jsp/common/500.jsp</location>
+    </error-page>
+
+</web-app>

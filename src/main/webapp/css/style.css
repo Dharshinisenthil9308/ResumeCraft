@@ -1,0 +1,72 @@
+/* ============================================================
+   ResumeCraft — Main Stylesheet (placeholder structure)
+   ============================================================ */
+
+/* --- CSS Reset & Base --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; background: #f5f7fa; }
+a { text-decoration: none; color: #2563eb; }
+
+/* --- Navbar --- */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); }
+.nav-brand a { font-size: 1.4rem; font-weight: 700; color: #1e40af; }
+.nav-links a { margin-left: 1.5rem; font-weight: 500; }
+
+/* --- Buttons --- */
+.btn { display: inline-block; padding: 0.6rem 1.4rem; border-radius: 6px; font-weight: 600; cursor: pointer; transition: 0.2s; border: none; }
+.btn-primary { background: #2563eb; color: #fff; }
+.btn-primary:hover { background: #1d4ed8; }
+.btn-outline { border: 2px solid #2563eb; color: #2563eb; background: transparent; }
+.btn-block { display: block; width: 100%; text-align: center; }
+
+/* --- Hero --- */
+.hero { text-align: center; padding: 5rem 2rem; background: linear-gradient(135deg, #2563eb, #7c3aed); color: #fff; }
+.hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; }
+.hero-actions .btn { margin: 0 0.5rem; }
+
+/* --- Features --- */
+.features { padding: 4rem 2rem; text-align: center; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.feature-card { padding: 2rem; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+/* --- Auth Forms --- */
+.auth-container { max-width: 420px; margin: 3rem auto; padding: 2rem; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.form-group { margin-bottom: 1.2rem; }
+.form-group label { display: block; margin-bottom: 0.4rem; font-weight: 600; }
+.form-group input { width: 100%; padding: 0.6rem; border: 1px solid #d1d5db; border-radius: 6px; font-size: 1rem; }
+.auth-link { text-align: center; margin-top: 1rem; }
+
+/* --- Alerts --- */
+.alert { padding: 0.8rem; border-radius: 6px; margin-bottom: 1rem; }
+.alert-error { background: #fee2e2; color: #991b1b; }
+.alert-success { background: #d1fae5; color: #065f46; }
+
+/* --- Dashboard --- */
+.dashboard-container { max-width: 900px; margin: 2rem auto; padding: 2rem; }
+.quick-actions { margin-bottom: 2rem; }
+.quick-actions .btn { margin-right: 1rem; }
+.resume-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+.resume-card { background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.stats-row { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+.stat-card { flex: 1; min-width: 120px; padding: 1.5rem; background: #fff; border-radius: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.06); font-weight: 600; }
+
+/* --- Builder --- */
+.builder-container { max-width: 700px; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.template-grid { display: flex; gap: 1rem; flex-wrap: wrap; }
+.template-option { cursor: pointer; }
+.template-preview { padding: 1.5rem; border: 2px solid #d1d5db; border-radius: 8px; text-align: center; }
+input[type="radio"]:checked + .template-preview { border-color: #2563eb; background: #eff6ff; }
+.section-checklist label { display: block; margin: 0.4rem 0; }
+
+/* --- Preview --- */
+.preview-container { max-width: 850px; margin: 2rem auto; }
+.preview-actions { margin-bottom: 1.5rem; }
+.resume-paper { background: #fff; padding: 3rem; box-shadow: 0 2px 16px rgba(0,0,0,0.1); border-radius: 4px; }
+
+/* --- Error Pages --- */
+.error-page { text-align: center; padding: 5rem 2rem; }
+.error-page h1 { font-size: 5rem; color: #2563eb; }
+
+/* --- Footer --- */
+.footer { text-align: center; padding: 2rem; color: #6b7280; font-size: 0.9rem; margin-top: 3rem; }
