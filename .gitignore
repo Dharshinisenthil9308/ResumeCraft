@@ -15,3 +15,27 @@ Thumbs.db
 
 # Docker volumes
 mysql_data/
+
+# Environment and sensitive configuration files
+.env
+.env.*
+*.env
+
+# Secret files and certificates
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.jks
+credentials.json
+secrets/
+
+# Log files
+*.log
+logs/
+
+# Generated WAR and package archives
+*.war
+*.jar
+*.rar
